@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import useSound from 'use-sound'
 import play from '../sound/play.mp3';
 import correct from '../sound/correct.mp3';
-import wait from '../sound/wait.mp3';
+// import wait from '../sound/wait.mp3';
 import wrong from '../sound/wrong.mp3'
 
 

@@ -25,7 +25,7 @@ export default function Timer({setStop, questionNumber, click, setClick}) {
        
         return ()=> clearInterval(interval)
 
-    }, [setStop, timer]);
+    }, [setStop, timer,setClick,click]);
 
 
     useEffect(() => {
