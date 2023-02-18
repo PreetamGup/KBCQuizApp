@@ -46,7 +46,7 @@ function App() {
 
     <div className="App">
 
-    {username?questionNumber!=16? (
+    {username?questionNumber!==16? (
       <>
         <div className="main">
         {stop ? (
