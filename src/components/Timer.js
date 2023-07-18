@@ -5,14 +5,15 @@ export default function Timer({setStop, questionNumber, click, setClick}) {
     const [timer, setTimer] = useState(30);
 
     useEffect(() => {
+  
       const interval = setInterval(()=>{
            
         setTimer((prev => prev-1))
       },1000)
 
-
+      
       if(click){
-        // setStop(true)
+       
         setClick(false)
         
         clearInterval(interval)
@@ -25,7 +26,7 @@ export default function Timer({setStop, questionNumber, click, setClick}) {
        
         return ()=> clearInterval(interval)
 
-    }, [setStop, timer,setClick,click]);
+    }, [setStop, timer]);
 
 
     useEffect(() => {
